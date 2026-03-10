@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pip show streamlit)"
+      "Bash(pip show streamlit)",
+      "Bash(rm -rf ai110-module1tinker-playlistchaos-starter/.git)",
+      "Bash(rm -rf week2/ai110-module1show-gameglitchinvestigator-starter/.git)",
+      "Bash(mkdir -p week1)",
+      "Bash(mv ai110-module1tinker-playlistchaos-starter/* ai110-module1tinker-playlistchaos-starter/.gitignore week1/)",
+      "Bash(mv ai110-module1tinker-playlistchaos-starter/.[!.]* week1/)",
+      "Bash(mv week2/ai110-module1show-gameglitchinvestigator-starter/* week2/)",
+      "Bash(mv week2/ai110-module1show-gameglitchinvestigator-starter/.[!.]* week2/)",
+      "Bash(rmdir ai110-module1tinker-playlistchaos-starter)",
+      "Bash(rmdir week2/ai110-module1show-gameglitchinvestigator-starter)"
     ]
   }
 }

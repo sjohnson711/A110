@@ -7,23 +7,23 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
-  1. The number of attempts did not did not decrement after the first guess
+  1. The number of attempts did not did not decrement after the first guess/str on line 42
   2. The new game button functionality is not working correctly
-  3. The game was telling me to go lower when the answer was actually highter. 
+  3. The game difficulty is not correlating to the number of attempts for each 
 ---
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)? I used ChatGPT and Claude to help with the fixes.
+- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result). The AI suggested that the str(number) was not the correct implimitation and fixed the TypeError
+- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).AI did not fix the bug. 
 
 ---
 
 ## 3. Debugging and testing your fixes
 
-- How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
+- How did you decide whether a bug was really fixed? Retested the functionality of the bug several times to make sure that the fix did not break.
+- Describe at least one test you ran (manual or using pytest)  . 
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
