@@ -1,6 +1,7 @@
 import random
 import streamlit as st
 from logic_utils import get_range_for_difficulty, parse_guess, check_guess, update_score
+#FIX: refactored game logic functions (get_range_for_difficulty, parse_guess, check_guess, update_score) out of app.py and into logic_utils.py using Claude agent mode
 
 OUTCOME_MESSAGES = {
     "Win": "🎉 Correct!",
@@ -92,7 +93,7 @@ if new_game:
 
 if st.session_state.status != "playing":
     if st.session_state.status == "won":
-        st.balloons()
+        st.balloons() #FIX: refactored st.balloons() to trigger on rerun after win, not before st.rerun(), so animation displays correctly using Claude agent mode
         st.success(
             f"You won! The secret was {st.session_state.secret}. "
             f"Final score: {st.session_state.score}. Start a new game to play again."
