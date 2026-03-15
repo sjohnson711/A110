@@ -145,6 +145,7 @@ if new_game:
 
 if st.session_state.status != "playing":
     if st.session_state.status == "won":
+        st.balloons()
         st.success(
             f"You won! The secret was {st.session_state.secret}. "
             f"Final score: {st.session_state.score}. Start a new game to play again."
@@ -183,7 +184,6 @@ if submit:
         )
 
         if outcome == "Win":
-            st.balloons()
             st.session_state.status = "won"
             st.rerun()
         else:
