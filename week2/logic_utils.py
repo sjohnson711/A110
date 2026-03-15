@@ -1,3 +1,5 @@
+#FIX: refactored all game logic functions from app.py into this module so they can be independently tested with pytest using Claude agent mode
+
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
     if difficulty == "Easy":
