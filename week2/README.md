@@ -25,13 +25,13 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ ] Describe the game's purpose. The game is to guess the secret number between 1 and 100. You have a certain number of attempts to guess the number. After each guess, you will receive a hint whether your guess is higher or lower than the secret number.
+- [ ] Detail which bugs you found. first bug was that the secret number kept changing every time I clicked the submit button. The second bug was that the hints were backwards.  
+- [ ] Explain what fixes you applied. To fix the first bug, I used st.session_state to keep the secret number from changing every time I clicked the submit button. For the second bug, I updated the logic for the hints to correctly indicate whether the guess was higher or lower than the secret number.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- ![alt text](image.png)
 
 ## 🚀 Stretch Features
 
